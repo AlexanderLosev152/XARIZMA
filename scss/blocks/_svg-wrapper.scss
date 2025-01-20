@@ -1,0 +1,26 @@
+.svg-wrapper {
+	border-radius: 40px;
+	padding: 1em;
+	background: var(--svg-wrapper-color);
+	@include hover {
+		animation: shake 0.1s infinite;
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px);
+	}
+	25% {
+		transform: translate(-1px, -1px);
+	}
+	50% {
+		transform: translate(1px, -1px);
+	}
+	75% {
+		transform: translate(-1px, 1px);
+	}
+	100% {
+		transform: translate(1px, 1px);
+	}
+}

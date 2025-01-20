@@ -1,0 +1,16 @@
+@import '../node_modules/normalize.css/normalize';
+
+@import './default/fonts';
+@import './default/variables';
+@import './default/container';
+@import './default/mixins';
+
+// block
+
+@import './blocks/svg-wrapper';
+
+@import './blocks/header/header';
+
+body {
+	font-family: var(--font-family);
+}
