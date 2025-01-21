@@ -1,16 +1,22 @@
 @import '../node_modules/normalize.css/normalize';
 
+@import './default/reset';
 @import './default/fonts';
 @import './default/variables';
 @import './default/container';
 @import './default/mixins';
+@import './default/media';
 
 // block
 
 @import './blocks/svg-wrapper';
+@import './blocks/btn';
 
 @import './blocks/header/header';
+@import './blocks/header/mobile-menu';
 
 body {
 	font-family: var(--font-family);
+	color: var(--ligth);
+	background: var(--bg-body);
 }

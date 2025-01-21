@@ -1,0 +1,63 @@
+.mobile-btn {
+	z-index: 100;
+	left: 0;
+	display: none;
+	cursor: pointer;
+	@include tablet {
+		display: inline-flex;
+		flex-direction: column;
+		gap: 0.5em;
+		position: relative;
+		span {
+			display: block;
+			border-radius: 3px;
+			width: 29px;
+			height: 3px;
+			background: var(--location-color);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+}
+
+.mobile-btn.open {
+	span:nth-child(1) {
+		transform: rotate(-45deg);
+		position: absolute;
+	}
+	span:nth-child(2) {
+		transform: rotate(45deg);
+	}
+}
+.mobile-menu {
+	display: none;
+}
+
+.mobile-menu.open {
+	display: inline-flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 5.6rem 1rem 2rem;
+	z-index: 10;
+	background: var(--bg-mobile-menu);
+	width: 100svh;
+	gap: 0.5rem;
+	div {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		a {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			span {
+				display: block;
+			}
+		}
+		.btn {
+			width: 204px;
+		}
+	}
+}

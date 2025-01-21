@@ -1,0 +1,35 @@
+$desktop-big: 120rem; //1920px
+$desktop: 75rem; // 1200px
+$tablet: 62rem; // 992px
+$mobile: 48rem; // 768px
+$mobile-s: 30rem; // 480px
+
+@mixin desktop-big {
+	@media (max-width: $desktop-big) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (max-width: $desktop) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: $tablet) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: $mobile) {
+		@content;
+	}
+}
+
+@mixin mobile-s {
+	@media (max-width: $mobile-s) {
+		@content;
+	}
+}

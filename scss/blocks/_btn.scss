@@ -1,0 +1,12 @@
+.btn {
+	font-family: var(--font-family);
+	font-weight: 800;
+	font-size: 0.81rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	border: 1px solid var(--gray);
+	border-radius: 2.5em;
+	padding: clamp(1.5em, 2.2vw, 2em);
+	width: min(12.75rem, 15vw);
+	justify-content: center;
+}
